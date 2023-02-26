@@ -27,7 +27,7 @@ function application() {
     var inputValue = document.querySelector("input");
     submitBtn.onclick = function(e) {
         alert("Your information is: " + inputValue.value);
-        inputValue.value = null;
+        inputValue.value = "";
     }
 }
 application();
