@@ -21,3 +21,13 @@ console.log(admin.className);
 console.log(user.class());
 
 console.log(admin.getName());
+
+function application() {
+    var submitBtn = document.querySelector("button");
+    var inputValue = document.querySelector("input");
+    submitBtn.onclick = function(e) {
+        alert("Your information is: " + inputValue.value);
+        inputValue.value = null;
+    }
+}
+application();
